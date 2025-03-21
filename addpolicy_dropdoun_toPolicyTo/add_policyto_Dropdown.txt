@@ -1,0 +1,16 @@
+<div className="form-group mb-2">
+                  <label className="form-label">Policy To:</label>
+                  <select
+                    name="policyTo"
+                    className="form-control"
+                    value={policyTo}
+                    onChange={(e) => setPolicyTo(e.target.value)}
+                    required
+                  >
+                    <option value="" disabled>
+                      Select Policy To
+                    </option>
+                    <option value="Self">Self</option>
+                    <option value="Dependence">Dependence</option>
+                  </select>
+                </div>
