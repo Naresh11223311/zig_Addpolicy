@@ -1,18 +1,22 @@
-<div className = "card-body" style={{ marginTop: '-20px' }}>
-                            <form class="p-4 bg-info text-dark">
-                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> Policy Type :</label>
-                                  
-                                        <select name="policyType" id="policyType" required
-  value={policyType}
-  onChange={(e) => setPolicyType(e.target.value)}
->
-  <option value="" disabled selected>Select Policy Type</option>
-  <option value="Motor Insurance">Motor Insurance</option>
-  <option value="Medical Insurance">Medical Insurance</option>
-  <option value="Life Insurance">Life Insurance</option>
-  <option value="General Insurance">General Insurance</option>
-</select>
-    
+<div className="card-body">
+              <form className="p-4 bg-info text-dark">
+                {/* Policy Type */}
+                <div className="form-group mb-2">
+                  <label className="form-label">Policy Type:</label>
+                  <select
+                    name="policyType"
+                    className="form-control"
+                    value={policyType}
+                    onChange={(e) => setPolicyType(e.target.value)}
+                    required
+                  >
+                    <option value="" disabled>
+                      Select Policy Type
+                    </option>
+                    <option value="Motor Insurance">Motor Insurance</option>
+                    <option value="Medical Insurance">Medical Insurance</option>
+                    <option value="Life Insurance">Life Insurance</option>
+                    <option value="General Insurance">General Insurance</option>
+                  </select>
+                </div>
 
-                                </div>
